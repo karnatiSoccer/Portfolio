@@ -1,20 +1,4 @@
 
-
-// import Header from '@/components/Header';
-// import './globals.css';
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       {/* Ensure bg-[#f4f3ef] is spelled correctly here */}
-//       <body className="bg-[#f4f3ef] text-[#1c1c1a] antialiased min-h-screen flex flex-col font-sans select-none">
-//         <Header />
-//         <main className="flex-1">{children}</main>
-//       </body>
-//     </html>
-//   );
-// }
-
 import Script from 'next/script';
 import Header from '@/components/Header';
 import './globals.css';

@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--background) !important;
   color: var(--foreground) !important;
@@ -29,4 +30,9 @@ select,
 input[type="submit"] {
   /* 🎯 Matches the hotspot for precision clicking on interaction elements */
   cursor: url('/soccer-ball.png') 8 8, pointer !important;
+}
+
+/* Hide AIDesigner Watermark badge (injected as an <a> tag, not a div) */
+a[href*="aidesigner.ai/?ref=effect-badge"] {
+  display: none !important;
 }

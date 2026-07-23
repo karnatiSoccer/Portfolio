@@ -11,46 +11,69 @@ export default function About() {
         <div className="max-w-3xl mx-auto space-y-20">
 
           {/* Header Section */}
-          <section className="flex flex-col-reverse md:flex-row gap-8 md:gap-12 md:items-start">
-            <div className="flex-1 space-y-6 mt-4 md:mt-0">
-              <h4 className="text-xs font-bold tracking-widest text-zinc-500 uppercase mb-4">
-                About Me
-              </h4>
-              <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold leading-[1.1] tracking-tight">
-                I am Ajinkya,<br />
-                a curious <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#d8b4fe] to-[#fbcfe8]">engineer</span>
-              </h1>
-              <p className="text-zinc-300 leading-relaxed text-sm sm:text-base pt-2">
-                Behind the screen, I'm someone who enjoys a good balance. I spend time coding and learning new things, but I also make space for the gym and staying active. I follow MMA regularly and appreciate the discipline and mindset behind it. I used to play chess, which shaped how I think and plan. I read Robert Greene, admire Jaun Elia's writing, and enjoy quiet moments that spark curiosity and growth.
-              </p>
-            </div>
+          <section className="space-y-4 md:space-y-6">
+            <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-6 md:items-start">
+              <div className="flex-1 space-y-6 mt-4 md:mt-0">
+                <h4 className="text-xs font-bold tracking-widest text-zinc-500 uppercase mb-4">
+                  About Me
+                </h4>
+                <h1 className="text-3xl sm:text-4xl md:text-[2.5rem] font-bold leading-[1.1] tracking-tight">
+                  I am Soccer Karnati,<br />
+                  <span className="text-xl sm:text-2xl md:text-3xl font-normal block mt-2 leading-relaxed">
+                    a final year undergraduate<br />
+                    <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#d8b4fe] to-[#fbcfe8]">
+                      Full-Stack Developer & AI Enthusiast.
+                    </span>
+                  </span>
+                </h1>
+              </div>
 
-            <div className="shrink-0 self-start md:mt-8">
-              <div className="w-40 h-40 sm:w-56 sm:h-56 bg-white rounded-[2rem] overflow-hidden flex items-center justify-center shadow-xl">
-                {/* Placeholder for the avatar image */}
-                <div className="text-zinc-400 flex flex-col items-center">
-                  <svg className="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                  <span className="text-xs font-mono">Avatar</span>
+              <div className="shrink-0 self-start">
+                <div className="w-32 h-32 sm:w-48 sm:h-48 bg-[#2a2a2a] rounded-[2rem] overflow-hidden flex items-center justify-center shadow-xl relative">
+                  <img src="/Image.jpeg" alt="Avatar" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
+
+            <p className="text-zinc-300 leading-relaxed text-sm sm:text-base">
+              At my core, I'm someone who truly loves creating software and exploring how complex systems function. My technical journey began with Java and Data Structures, which naturally evolved into full-stack web development using the MERN stack. Along the way, I developed a strong interest in backend design, real-time tech, and Artificial Intelligence. I enjoy working through difficult logic, adapting to new frameworks, and transforming raw concepts into functional applications. Outside of dev work, I dedicate time to sharpening my problem-solving skills, working out at the gym, and constantly striving for continuous self-improvement.
+            </p>
           </section>
 
-          {/* Journey Section */}
+          {/* Timeline Section */}
           <section className="space-y-6">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              My journey so far
+              Timeline
             </h2>
-            <div className="space-y-6 text-zinc-300 leading-relaxed text-sm sm:text-base">
-              <p>
-                I started college in 2022 mostly enjoying the experience , meeting new people, exploring different interests, and figuring things out as I went. Toward the end of that year, my curiosity shifted toward cybersecurity, where I began learning the fundamentals and earned a few certificates along the way.
-              </p>
-              <p>
-                In 2023, I picked up Linux and Python, which slowly opened the door to web development. I started with basic HTML and CSS, then moved on to React, MongoDB, and Express. Around this time, I also worked through JavaScript's common bottlenecks and began understanding how things really work under the hood.
-              </p>
-              <p>
-                By 2024, I was actively building projects, diving deeper into React, TypeScript, and more complex backend systems using WebSockets. In 2025, I finally broke out of tutorial hell, started building projects based on my own ideas, explored blockchain with Solidity and client-side Solana, and I'm currently learning Rust, one step at a time.
-              </p>
+            <div className="border-l border-zinc-800 ml-3">
+              <div className="mb-8 ml-8 relative">
+                <span className="absolute -left-[38px] top-1.5 h-3 w-3 rounded-full bg-zinc-500 ring-8 ring-[#121211]"></span>
+                <h3 className="text-xl font-semibold text-white">2023</h3>
+                <p className="mt-2 text-zinc-300 leading-relaxed text-sm sm:text-base">
+                  Started my Computer Science journey and built a strong foundation in Java, programming fundamentals, and Data Structures & Algorithms.
+                </p>
+              </div>
+              <div className="mb-8 ml-8 relative">
+                <span className="absolute -left-[38px] top-1.5 h-3 w-3 rounded-full bg-zinc-500 ring-8 ring-[#121211]"></span>
+                <h3 className="text-xl font-semibold text-white">2024</h3>
+                <p className="mt-2 text-zinc-300 leading-relaxed text-sm sm:text-base">
+                  Discovered web development and learned HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB while building my first full-stack projects.
+                </p>
+              </div>
+              <div className="mb-8 ml-8 relative">
+                <span className="absolute -left-[38px] top-1.5 h-3 w-3 rounded-full bg-zinc-500 ring-8 ring-[#121211]"></span>
+                <h3 className="text-xl font-semibold text-white">2025</h3>
+                <p className="mt-2 text-zinc-300 leading-relaxed text-sm sm:text-base">
+                  Worked on larger full-stack applications involving authentication, REST APIs, WebSockets, real-time communication, and responsive user interfaces.
+                </p>
+              </div>
+              <div className="ml-8 relative">
+                <span className="absolute -left-[38px] top-1.5 h-3 w-3 rounded-full bg-[#d8b4fe] ring-8 ring-[#121211]"></span>
+                <h3 className="text-xl font-semibold text-white">2026</h3>
+                <p className="mt-2 text-zinc-300 leading-relaxed text-sm sm:text-base">
+                  Expanded into Artificial Intelligence, blockchain, Docker, and secure distributed applications. Built AI-powered applications.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -61,61 +84,29 @@ export default function About() {
             </h2>
             <div className="space-y-4">
               <div className="border-b border-zinc-800 pb-4">
-                <h3 className="text-lg font-medium text-zinc-200 mb-1">Agents/LLMs</h3>
-                <p className="text-zinc-400 text-sm sm:text-base">ClaudeCode , OpenCode , Cursor</p>
-              </div>
-              <div className="border-b border-zinc-800 pb-4">
                 <h3 className="text-lg font-medium text-zinc-200 mb-1">Languages</h3>
-                <p className="text-zinc-400 text-sm sm:text-base">TypeScript ,Javascript , Python ,C++ ,SQL</p>
+                <p className="text-zinc-400 text-sm sm:text-base">TypeScript • Javascript • Python • C++ • SQL</p>
               </div>
               <div className="border-b border-zinc-800 pb-4">
-                <h3 className="text-lg font-medium text-zinc-200 mb-1">Databases & ORMs</h3>
-                <p className="text-zinc-400 text-sm sm:text-base">MongoDB , PostgreSQL , Redis , MySQL , prisma , Drizzle , firebase ,supabase</p>
+                <h3 className="text-lg font-medium text-zinc-200 mb-1">Full Stack</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">React • Next.js • Node.js • Express.js • MongoDB • MySQL • Tailwind CSS • Bootstrap</p>
               </div>
               <div className="border-b border-zinc-800 pb-4">
-                <h3 className="text-lg font-medium text-zinc-200 mb-1">Libraries & Frameworks</h3>
-                <p className="text-zinc-400 text-sm sm:text-base">NextJS , Ai-SDK by Vercel , React , Vite ,Express , NodeJS , TailwindCSS , MagicUI , Redux Recoil</p>
+                <h3 className="text-lg font-medium text-zinc-200 mb-1">AI & Machine Learning</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">Python • FastAPI • Scikit-Learn • Machine Learning • AI Applications</p>
               </div>
-            </div>
-          </section>
-
-          {/* Timeline Section */}
-          <section className="space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-8">
-              Timeline
-            </h2>
-            <div className="relative border-l border-zinc-800 ml-2 sm:ml-3 space-y-12 py-2">
-
-              <div className="relative pl-6 sm:pl-8">
-                <div className="absolute w-2.5 h-2.5 bg-zinc-500 rounded-full -left-[5.5px] top-1.5 ring-4 ring-[#1c1c1a]"></div>
-                <div className="text-sm font-mono text-zinc-400 mb-2">2004</div>
-                <div className="text-zinc-300 text-sm sm:text-base">Spent my early days getting around on all fours, much like a tiny, less-furry bear cub.</div>
+              <div className="border-b border-zinc-800 pb-4">
+                <h3 className="text-lg font-medium text-zinc-200 mb-1">Backend & APIs</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">REST APIs • JWT Authentication • WebSockets • WebRTC • Authentication Systems</p>
               </div>
-
-              <div className="relative pl-6 sm:pl-8">
-                <div className="absolute w-2.5 h-2.5 bg-zinc-500 rounded-full -left-[5.5px] top-1.5 ring-4 ring-[#1c1c1a]"></div>
-                <div className="text-sm font-mono text-zinc-400 mb-2">2022</div>
-                <div className="text-zinc-300 text-sm sm:text-base">Started exploring programming, web fundamentals and linux.</div>
+              <div className="border-b border-zinc-800 pb-4">
+                <h3 className="text-lg font-medium text-zinc-200 mb-1">Cloud & DevOps</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">Docker • Git & GitHub • Netlify • Vercel • Cloud Platforms</p>
               </div>
-
-              <div className="relative pl-6 sm:pl-8">
-                <div className="absolute w-2.5 h-2.5 bg-zinc-500 rounded-full -left-[5.5px] top-1.5 ring-4 ring-[#1c1c1a]"></div>
-                <div className="text-sm font-mono text-zinc-400 mb-2">2023</div>
-                <div className="text-zinc-300 text-sm sm:text-base">Started learning Web development , HTML , CSS , JS</div>
+              <div className="border-b border-zinc-800 pb-4">
+                <h3 className="text-lg font-medium text-zinc-200 mb-1">Tools & Methodologies</h3>
+                <p className="text-zinc-400 text-sm sm:text-base">Agile • Version Control • Debugging • Performance Optimization • Problem Solving</p>
               </div>
-
-              <div className="relative pl-6 sm:pl-8">
-                <div className="absolute w-2.5 h-2.5 bg-zinc-500 rounded-full -left-[5.5px] top-1.5 ring-4 ring-[#1c1c1a]"></div>
-                <div className="text-sm font-mono text-zinc-400 mb-2">2024</div>
-                <div className="text-zinc-300 text-sm sm:text-base">Focused on frontend with React and backend with express , still used to feel scared to typescript and postgreSQL got too much interested in blockchain</div>
-              </div>
-
-              <div className="relative pl-6 sm:pl-8">
-                <div className="absolute w-2.5 h-2.5 bg-zinc-500 rounded-full -left-[5.5px] top-1.5 ring-4 ring-[#1c1c1a]"></div>
-                <div className="text-sm font-mono text-zinc-400 mb-2">2025</div>
-                <div className="text-zinc-300 text-sm sm:text-base">Comes the turning point of my development journey started working of more complex projects , learned typescript , started woking with UI and ORM libraries , started learning about blockchain , client side SOL and solidity</div>
-              </div>
-
             </div>
           </section>
 
