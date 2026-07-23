@@ -6,14 +6,14 @@ import './globals.css';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen flex flex-col font-sans select-none relative isolate">
+      <body className="antialiased min-h-screen flex flex-col font-sans select-none relative isolate overflow-x-hidden">
         <Script src="https://cdn.aidesigner.ai/effects/runtime/v1.js" strategy="afterInteractive" data-aifx-key="aifx_pk_935ddb5b51d142c79d102253acedd7cc" />
         {/* Riso Dither Background Effect */}
         <div
           data-aifx="dither"
           data-aifx-colors="#7b7878,#000000"
           data-aifx-bg="#000000"
-          data-aifx-speed="0.14"
+          data-aifx-speed="0.000001"
           data-aifx-contrast="2.5"
           data-aifx-flow-angle="129"
           data-aifx-glow="0.44"

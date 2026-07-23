@@ -36,3 +36,12 @@ input[type="submit"] {
 a[href*="aidesigner.ai/?ref=effect-badge"] {
   display: none !important;
 }
+
+/* Hide scrollbar for components like the GitHub calendar on mobile */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

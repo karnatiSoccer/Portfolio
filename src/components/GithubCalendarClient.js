@@ -7,20 +7,22 @@ export default function GithubCalendarClient({ username }) {
   const selectLastHalfYear = contributions => contributions.slice(-135);
 
   return (
-    <div className="w-full flex justify-center text-[#f4f3ef]/80 pb-2">
-      <GitHubCalendar 
-        username={username}
-        colorScheme="dark"
-        theme={{
-          dark: ['#2a2a2a', '#7e22ce', '#9333ea', '#a855f7', '#c084fc']
-        }}
-        fontSize={13}
-        blockSize={13}
-        blockMargin={4}
-        transformData={selectLastHalfYear}
-        hideTotalCount={true}
-        hideColorLegend={true}
-      />
+    <div className="w-full flex justify-center text-[#f4f3ef]/80 pb-2 overflow-x-auto overflow-y-hidden custom-scrollbar">
+      <div className="min-w-max px-2">
+        <GitHubCalendar 
+          username={username}
+          colorScheme="dark"
+          theme={{
+            dark: ['#2a2a2a', '#7e22ce', '#9333ea', '#a855f7', '#c084fc']
+          }}
+          fontSize={13}
+          blockSize={13}
+          blockMargin={4}
+          transformData={selectLastHalfYear}
+          hideTotalCount={true}
+          hideColorLegend={true}
+        />
+      </div>
     </div>
   );
 }

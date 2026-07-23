@@ -14,7 +14,7 @@ export default function Home() {
       {/* Page Content Wrapper */}
       <div className="w-full p-1 flex flex-col gap-1">
         <div className="pt-1 pb-1 px-1 sm:px-2 w-full flex flex-col gap-1">
-          <div className="mx-auto max-w-4xl w-full bg-[#121211] rounded-[2rem] p-2 sm:p-8 lg:p-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.7)] border border-white/5">
+          <div className="mx-auto max-w-4xl w-full bg-[#121211] rounded-[2rem] p-5 sm:p-8 lg:p-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.7)] border border-white/5">
 
             {/* Top: Photo + Hero Content */}
             {/* <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 items-center sm:items-start pb-10"> */}
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
 
           {/* Skills Section */}
-          <div id="skills" className="mx-auto max-w-4xl w-full bg-[#121211] rounded-[2rem] p-2 sm:p-8 lg:p-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.7)] border border-white/5">
+          <div id="skills" className="mx-auto max-w-4xl w-full bg-[#121211] rounded-[2rem] p-5 sm:p-8 lg:p-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.7)] border border-white/5">
             <h2 className="text-2xl font-bold text-[#f4f3ef] mb-6 text-center sm:text-left">Skills & Tools</h2>
             <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
               {[
